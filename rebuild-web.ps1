@@ -30,7 +30,8 @@ Push-Location $app
 try { npx expo export -p web -c } finally { Pop-Location }
 
 Write-Host "Copying dist -> fittrack-web ..."
-Get-ChildItem -Force $web | Where-Object { $_.Name -notin @("README.md", "rebuild-web.ps1") } |
+Get-ChildItem -Force $web |
+  Where-Object { $_.Name -notin @("README.md", "rebuild-web.ps1", ".git", ".gitignore") } |
   Remove-Item -Recurse -Force
 Copy-Item -Recurse -Force (Join-Path $app "dist\*") $web
 New-Item -ItemType File -Force -Path (Join-Path $web ".nojekyll") | Out-Null

@@ -8,14 +8,14 @@
 
 ## 重要:資源路徑(baseUrl)
 
-這份匯出已把資源路徑寫死成 **`/fittrack`**,也就是預期網址為:
+這份匯出已把資源路徑寫死成 **`/FitTrack`**,也就是預期網址為:
 
 ```
-https://<你的帳號>.github.io/fittrack/
+https://<你的帳號>.github.io/FitTrack/
 ```
 
-**所以 GitHub 倉庫(repo)必須命名為 `fittrack`。**
-若你想用別的 repo 名稱,請改用其他名稱重建(見最後一節),否則圖片與程式會 404。
+**所以 GitHub 倉庫(repo)必須命名為 `FitTrack`(大小寫一致)。**
+⚠️ GitHub Pages 路徑**區分大小寫**:`FitTrack` 與 `fittrack` 是不同網址。若你想用別的名稱,請用重建腳本(見最後一節),否則圖片與程式會 404。
 
 ---
 
