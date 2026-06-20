@@ -1,0 +1,5 @@
+# This is a BUILT static site for GitHub Pages — everything here must be committed.
+# Expo bundles web fonts/icons under assets/node_modules/, but the global gitignore
+# (~/.gitignore_global) ignores node_modules/. Re-include them so they get uploaded.
+!assets/node_modules/
+!assets/node_modules/**
